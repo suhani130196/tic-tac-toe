@@ -87,11 +87,6 @@ function GameBoard({ onSelectSquare, activePlayer, getWinningPlayerName }) {
           <ol>
             {row.map((playerSymbol, colIndex) => (
               <li key={colIndex} className="list">
-                {/* <p>
-                  {rowIndex} {colIndex}
-                </p> */}
-                {/* <p>{colIndex}</p>
-                <p>{gameboard[rowIndex][colIndex]}</p> */}
                 <button
                   onClick={() => updateGameBoard(rowIndex, colIndex)}
                   className="boardButton"

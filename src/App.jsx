@@ -4,6 +4,7 @@ import Player from "./Player";
 import { Routes, Route } from "react-router-dom";
 import GameBoard from "./GameBoard";
 import GameOver from "./GameOverpage";
+import HomePage from "./HomePage";
 
 function Tic_Tac_Toe_App() {
   const player1 = {
@@ -79,7 +80,8 @@ function Tic_Tac_Toe_App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={gameContainer()} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/game" element={gameContainer()} />
         <Route path="/gameover" element={<GameOver />} />
       </Routes>
     </div>
